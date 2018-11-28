@@ -1,0 +1,22 @@
+0    = 0 y
+1    = 1 line
+2    = 1 column
+3    PRINT y
+4    < line m t0
+5    JZ t0     17
+6    = 1 column
+7    <= column line t1
+8    JZ t1     13
+9    PRINT line
+10   + column 1 t2
+11   = t2 column
+12   JP 7
+13   PRINT y
+14   + line 1 t3
+15   = t3 line
+16   JP 4
+17   RETURN y
+18   PAR 5
+19   CALL triangle 1
+20   ACC x
+21   HALT

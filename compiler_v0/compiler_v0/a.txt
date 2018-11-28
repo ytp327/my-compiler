@@ -1,0 +1,9 @@
+{
+	int x;
+	int y;
+	{
+		a= 10;
+		while(1)
+		do x=y;
+	}
+}
